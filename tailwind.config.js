@@ -13,9 +13,6 @@ export default {
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif']
       },
-      colors: {
-        'booking-red': '#d6293e',
-      },
       keyframes: {
         'fade-in-out': {
           '0%, 100%': { opacity: '1' },
