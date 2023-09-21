@@ -6,4 +6,8 @@
     .standard-container {
         @apply mx-auto w-full max-w-[850px] xl:max-w-[1200px];
     }
+    
+    .heading-1 {
+    	@apply font-bold text-3xl dark:text-white md:text-5xl text-center;
+    }
 }

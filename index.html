@@ -15,6 +15,8 @@
 
 <body class="font-poppins dark:bg-[#222529]">
     <!-- Header starts -->
+    <!-- Here i used custom component class called "standard-container" -->
+    <!-- Check that out in style.css -->
     <header class="flex flex-wrap standard-container">
         <!-- Navigation starts -->
         <nav class="w-full p-4 dark:text-slate-400 xl:px-4 xl:py-6">
@@ -491,7 +493,9 @@
                     </div>
                 </div>
                 <div class="w-full p-5 px-3 xl:w-[55%]">
-                    <h1 class="mb-10 mt-16 text-[2rem] font-bold dark:text-white md:text-[2.5rem] lg:mt-5 lg:text-[3rem]">The Best Holidays Start Here!</h1>
+                    <!-- Here i used custom component class called "heading-1" -->
+                    <!-- Check that out in style.css -->
+                    <h1 class="mb-10 mt-16 lg:mt-5 heading-1 text-left">The Best Holidays Start Here!</h1>
                     <p class="my-8 text-slate-400 lg:mb-20">Book your hotel with us and don't forget to grab an awesome hotel deal to save massive on your stay.</p>
                     <div class="flex flex-col gap-y-8 space-y-2 lg:flex-row lg:flex-wrap lg:space-y-0">
                         <div class="w-full lg:basis-1/2 lg:pr-3">
@@ -537,7 +541,9 @@
         <section class="mt-12">
             <div class="standard-container px-4">
                 <div class="text-center mb-6">
-                    <h1 class="font-bold text-3xl md:text-5xl dark:text-white">Featured Hotels</h1>
+                    <!-- Here i used custom component class called "heading-1" -->
+                    <!-- Check that out in style.css -->
+                    <h1 class="heading-1">Featured Hotels</h1>
                 </div>
                 <div class="cards-container flex flex-wrap justify-center xl:flex-nowrap gap-3 lg:gap-6">
                     <figure class="basis-full md:basis-1/3 xl:basis-1/4 group">
@@ -659,6 +665,137 @@
             </div>
         </section>
         <!-- Testimonial section ends -->
+        <!-- Explore section starts -->
+        <section class="mt-20">
+            <div class="standard-container">
+                <!-- Here i used custom component class called "heading-1" -->
+                <!-- Check that out in style.css -->
+                <h1 class="heading-1 mb-6">Explore Nearby</h1>
+                <div class="country-cards flex flex-wrap justify-center items-center">
+                    <!-- 1st -->
+                    <div class="group flex flex-col space-y-3 text-center w-1/2 sm:w-1/3 xl:w-1/6 p-6">
+                        <div class="shrink-0">
+                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/01.jpg" alt="one" class="w-full h-auto object-contain object-center rounded-full" loading="lazy">
+                        </div>
+                        <div>
+                            <h4 class="group-hover:text-indigo-600 duration-300 ease-out dark:text-white font-bold text-xl">San Francisco</h4>
+                            <p class="text-slate-400">13 min drive</p>
+                        </div>
+                    </div>
+                    <!-- 2nd -->
+                    <div class="group flex flex-col space-y-3 text-center w-1/2 sm:w-1/3 xl:w-1/6 p-6">
+                        <div class="shrink-0">
+                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/02.jpg" alt="one" class="w-full h-auto object-contain object-center rounded-full" loading="lazy">
+                        </div>
+                        <div>
+                            <h4 class="group-hover:text-indigo-600 duration-300 ease-out dark:text-white font-bold text-xl">Los Angeles</h4>
+                            <p class="text-slate-400">25 min drive</p>
+                        </div>
+                    </div>
+                    <!-- 3rd -->
+                    <div class="group flex flex-col space-y-3 text-center w-1/2 sm:w-1/3 xl:w-1/6 p-6">
+                        <div class="shrink-0">
+                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/03.jpg" alt="one" class="w-full h-auto object-contain object-center rounded-full" loading="lazy">
+                        </div>
+                        <div>
+                            <h4 class="group-hover:text-indigo-600 duration-300 ease-out dark:text-white font-bold text-xl">Miami</h4>
+                            <p class="text-slate-400">45 min drive</p>
+                        </div>
+                    </div>
+                    <!-- 4th -->
+                    <div class="group flex flex-col space-y-3 text-center w-1/2 sm:w-1/3 xl:w-1/6 p-6">
+                        <div class="shrink-0">
+                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/04.jpg" alt="one" class="w-full h-auto object-contain object-center rounded-full" loading="lazy">
+                        </div>
+                        <div>
+                            <h4 class="group-hover:text-indigo-600 duration-300 ease-out dark:text-white font-bold text-xl">Sanjosh</h4>
+                            <p class="text-slate-400">55 min drive</p>
+                        </div>
+                    </div>
+                    <!-- 5th -->
+                    <div class="group flex flex-col space-y-3 text-center w-1/2 sm:w-1/3 xl:w-1/6 p-6">
+                        <div class="shrink-0">
+                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/05.jpg" alt="one" class="w-full h-auto object-contain object-center rounded-full" loading="lazy">
+                        </div>
+                        <div>
+                            <h4 class="group-hover:text-indigo-600 duration-300 ease-out dark:text-white font-bold text-xl">New York</h4>
+                            <p class="text-slate-400">1-hour drive</p>
+                        </div>
+                    </div>
+                    <!-- 6th -->
+                    <div class="group flex flex-col space-y-3 text-center w-1/2 sm:w-1/3 xl:w-1/6 p-6">
+                        <div class="shrink-0">
+                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/06.jpg" alt="one" class="w-full h-auto object-contain object-center rounded-full" loading="lazy">
+                        </div>
+                        <div>
+                            <h4 class="group-hover:text-indigo-600 duration-300 ease-out dark:text-white font-bold text-xl">North Justen</h4>
+                            <p class="text-slate-400">2-hour drive</p>
+                        </div>
+                    </div>
+                    <!-- 7th -->
+                    <div class="group flex flex-col space-y-3 text-center w-1/2 sm:w-1/3 xl:w-1/6 p-6">
+                        <div class="shrink-0">
+                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/07.jpg" alt="one" class="w-full h-auto object-contain object-center rounded-full" loading="lazy">
+                        </div>
+                        <div>
+                            <h4 class="group-hover:text-indigo-600 duration-300 ease-out dark:text-white font-bold text-xl">Rio</h4>
+                            <p class="text-slate-400">20 min drive</p>
+                        </div>
+                    </div>
+                    <!-- 8th -->
+                    <div class="group flex flex-col space-y-3 text-center w-1/2 sm:w-1/3 xl:w-1/6 p-6">
+                        <div class="shrink-0">
+                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/08.jpg" alt="one" class="w-full h-auto object-contain object-center rounded-full" loading="lazy">
+                        </div>
+                        <div>
+                            <h4 class="group-hover:text-indigo-600 duration-300 ease-out dark:text-white font-bold text-xl">Las Vegas</h4>
+                            <p class="text-slate-400">3-hour drive</p>
+                        </div>
+                    </div>
+                    <!-- 9th -->
+                    <div class="group flex flex-col space-y-3 text-center w-1/2 sm:w-1/3 xl:w-1/6 p-6">
+                        <div class="shrink-0">
+                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/09.jpg" alt="one" class="w-full h-auto object-contain object-center rounded-full" loading="lazy">
+                        </div>
+                        <div>
+                            <h4 class="group-hover:text-indigo-600 duration-300 ease-out dark:text-white font-bold text-xl">Texas</h4>
+                            <p class="text-slate-400">55 min drive</p>
+                        </div>
+                    </div>
+                    <!-- 10th -->
+                    <div class="group flex flex-col space-y-3 text-center w-1/2 sm:w-1/3 xl:w-1/6 p-6">
+                        <div class="shrink-0">
+                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/10.jpg" alt="one" class="w-full h-auto object-contain object-center rounded-full" loading="lazy">
+                        </div>
+                        <div>
+                            <h4 class="group-hover:text-indigo-600 duration-300 ease-out dark:text-white font-bold text-xl">Chicago</h4>
+                            <p class="text-slate-400">13 min drive</p>
+                        </div>
+                    </div>
+                    <!-- 11th -->
+                    <div class="group flex flex-col space-y-3 text-center w-1/2 sm:w-1/3 xl:w-1/6 p-6">
+                        <div class="shrink-0">
+                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/11.jpg" alt="one" class="w-full h-auto object-contain object-center rounded-full" loading="lazy">
+                        </div>
+                        <div>
+                            <h4 class="group-hover:text-indigo-600 duration-300 ease-out dark:text-white font-bold text-xl">New Keagon</h4>
+                            <p class="text-slate-400">35 min drive</p>
+                        </div>
+                    </div>
+                    <!-- 12th -->
+                    <div class="group flex flex-col space-y-3 text-center w-1/2 sm:w-1/3 xl:w-1/6 p-6">
+                        <div class="shrink-0">
+                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/12.jpg" alt="one" class="w-full h-auto object-contain object-center rounded-full" loading="lazy">
+                        </div>
+                        <div>
+                            <h4 class="group-hover:text-indigo-600 duration-300 ease-out dark:text-white font-bold text-xl">Oslo</h4>
+                            <p class="text-slate-400">1 hour 13 min drive</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Explore section ends -->
     </main>
     <!-- Main ends -->
     <script type="module" src="/main.js"></script>
