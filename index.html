@@ -28,8 +28,32 @@
                 </a>
                 <div class="ml-auto px-3 sm:ml-0">
                     <ul class="hidden items-center space-x-6 font-medium xl:flex">
-                        <li class="inline-block px-3 py-1 text-sm">
-                            <a href="/">Listings <i class="fa-solid fa-chevron-down fa-xs"></i> </a>
+                        <li class="group relative inline-block px-3 py-1 text-sm">
+                            <a href="/">Listings <i class="fa-solid fa-chevron-down fa-xs"></i></a>
+                            <!-- Dropdown Navigation -->
+                            <ul class="absolute top-full w-60 hidden group-hover:flex flex-col p-2 bg-white dark:bg-[#191B1D] rounded-lg shadow-xl ring-1 ring-slate-900/5 z-10 [&>li]:w-full">
+                                <li class="group/sub inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Hotel</a><span><i class="fa-solid fa-ellipsis"></i></span>
+                                    <!-- Sub-Dropdown Navigation -->
+                                    <ul class="hidden group-hover/sub:flex flex-col absolute top-4 bg-white dark:bg-[#191B1D] left-[96%] w-60 shadow-xl ring-1 ring-slate-900/5 rounded-lg p-2">
+                                        <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Hotel Home</a></li>
+                                        <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Hotel Chain</a></li>
+                                        <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Hotel Resort</a></li>
+                                        <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Hotel Grid</a></li>
+                                        <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Hotel List</a></li>
+                                        <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Hotel Detail</a></li>
+                                        <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Hotel Booking</a></li>
+                                    </ul>
+                                </li>
+                                <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Flight</a><i class="fa-solid fa-ellipsis"></i></li>
+                                <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Tour</a><i class="fa-solid fa-ellipsis"></i></li>
+                                <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Cab</a><i class="fa-solid fa-ellipsis"></i></li>
+                                <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Directory</a><i class="fa-solid fa-ellipsis"></i></li>
+                                <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Add Listing</a><i class="fa-solid fa-ellipsis"></i></li>
+                                <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Hero</a><i class="fa-solid fa-ellipsis"></i></li>
+                                <li class="inline-block text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Booking Confirmed</a></li>
+                                <li class="inline-block text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Compare Listing</a></li>
+                                <li class="inline-block text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Offer Detail</a></li>
+                            </ul>
                         </li>
                         <li class="inline-block px-3 py-1 text-sm">
                             <a href="/">Pages <i class="fa-solid fa-chevron-down fa-xs"></i> </a>
