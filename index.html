@@ -25,7 +25,7 @@
 </head>
 <!-- https://play.tailwindcss.com/pNA9eWgtKR -->
 
-<body class="font-poppins dark:bg-[#222529]">
+<body class="font-poppins dark:bg-[#222529] transition-all duration-300 ease-out">
     <!-- Header starts -->
     <!-- Here i used custom component class called "standard-container" -->
     <!-- Check that out in style.css -->
@@ -43,28 +43,29 @@
                         <li class="group relative inline-block px-3 py-1 text-sm">
                             <a href="/">Listings <i class="fa-solid fa-chevron-down fa-xs"></i></a>
                             <!-- Dropdown Navigation -->
-                            <ul class="absolute top-full w-60 hidden group-hover:flex flex-col p-2 bg-white dark:bg-[#191B1D] rounded-lg shadow-xl ring-1 ring-slate-900/5 z-10 [&>li]:w-full">
-                                <li class="group/sub inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Hotel</a><span><i class="fa-solid fa-ellipsis"></i></span>
+                            <ul class="absolute top-full z-10 hidden w-60 flex-col rounded-lg bg-white p-2 shadow-xl ring-1 ring-slate-900/5 group-hover:flex dark:bg-[#191B1D] [&>li]:w-full">
+                                <li class="group/sub flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600">
+                                    <a href="/">Hotel</a><span><i class="fa-solid fa-ellipsis"></i></span>
                                     <!-- Sub-Dropdown Navigation -->
-                                    <ul class="hidden group-hover/sub:flex flex-col absolute top-4 bg-white dark:bg-[#191B1D] left-[96%] w-60 shadow-xl ring-1 ring-slate-900/5 rounded-lg p-2">
-                                        <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Hotel Home</a></li>
-                                        <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Hotel Chain</a></li>
-                                        <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Hotel Resort</a></li>
-                                        <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Hotel Grid</a></li>
-                                        <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Hotel List</a></li>
-                                        <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Hotel Detail</a></li>
-                                        <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Hotel Booking</a></li>
+                                    <ul class="absolute left-[96%] top-4 hidden w-60 flex-col rounded-lg bg-white p-2 shadow-xl ring-1 ring-slate-900/5 group-hover/sub:flex dark:bg-[#191B1D]">
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hotel Home</a></li>
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hotel Chain</a></li>
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hotel Resort</a></li>
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hotel Grid</a></li>
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hotel List</a></li>
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hotel Detail</a></li>
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hotel Booking</a></li>
                                     </ul>
                                 </li>
-                                <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Flight</a><i class="fa-solid fa-ellipsis"></i></li>
-                                <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Tour</a><i class="fa-solid fa-ellipsis"></i></li>
-                                <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Cab</a><i class="fa-solid fa-ellipsis"></i></li>
-                                <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Directory</a><i class="fa-solid fa-ellipsis"></i></li>
-                                <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Add Listing</a><i class="fa-solid fa-ellipsis"></i></li>
-                                <li class="inline-block flex justify-between items-center text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Hero</a><i class="fa-solid fa-ellipsis"></i></li>
-                                <li class="inline-block text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Booking Confirmed</a></li>
-                                <li class="inline-block text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Compare Listing</a></li>
-                                <li class="inline-block text-slate-400 py-3 px-2 hover:bg-slate-400/10 hover:text-indigo-600 rounded-md"><a href="/">Offer Detail</a></li>
+                                <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Flight</a><i class="fa-solid fa-ellipsis"></i></li>
+                                <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Tour</a><i class="fa-solid fa-ellipsis"></i></li>
+                                <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Cab</a><i class="fa-solid fa-ellipsis"></i></li>
+                                <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Directory</a><i class="fa-solid fa-ellipsis"></i></li>
+                                <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Add Listing</a><i class="fa-solid fa-ellipsis"></i></li>
+                                <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hero</a><i class="fa-solid fa-ellipsis"></i></li>
+                                <li class="inline-block rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Booking Confirmed</a></li>
+                                <li class="inline-block rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Compare Listing</a></li>
+                                <li class="inline-block rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Offer Detail</a></li>
                             </ul>
                         </li>
                         <li class="inline-block px-3 py-1 text-sm">
@@ -104,7 +105,7 @@
                         <span class="hidden sm:inline sm:text-lg">Category</span>
                     </button>
                 </div>
-                <ul class="flex space-x-3">
+                <ul class="flex items-center space-x-2">
                     <li class="relative flex h-10 w-10 items-center justify-center rounded-md bg-slate-100 dark:bg-indigo-50/5">
                         <a href="/"><i class="fa-regular fa-bell dark:text-white"></i></a>
                         <div class="animate-fade-in-out absolute right-0 top-0 -mr-1 -mt-1 h-3 w-3 rounded-full bg-rose-600 opacity-75"></div>
@@ -112,6 +113,17 @@
                     <li>
                         <a href="/" class="shrink-0"><img src="https://booking.webestica.com/assets/images/avatar/01.jpg" alt="Avatar" class="h-10 w-10 rounded-md" /></a>
                     </li>
+                    <!-- Light/Dark toggle switch starts -->
+                    <label class="rounded-md p-2 shadow-md ring-1 ring-slate-900/5 dark:ring-slate-300/50">
+                        <input type="checkbox" name="toggle" id="toggle" class="peer sr-only appearance-none" />
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="hidden h-6 w-6 fill-slate-400 peer-checked:inline-block">
+                            <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 fill-slate-400 peer-checked:hidden">
+                            <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clip-rule="evenodd" />
+                        </svg>
+                    </label>
+                    <!-- Light/Dark toggle switch ends -->
                 </ul>
                 <!-- Right nav ends -->
             </div>
@@ -1015,7 +1027,7 @@
         </section>
         <!-- Footer section ends -->
         <!-- To the top button starts -->
-        <a href="#top" class="fixed bottom-8 right-8 rounded-md bg-indigo-600 p-4 z-[9999]">
+        <a href="#top" class="fixed bottom-8 right-8 z-[9999] rounded-md bg-indigo-600 p-4">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 stroke-white">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
             </svg>
