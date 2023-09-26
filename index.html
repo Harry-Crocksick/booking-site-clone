@@ -21,9 +21,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <title>Booking - Multipurpose Online Booking Theme</title>
 </head>
-<!-- https://play.tailwindcss.com/pNA9eWgtKR -->
 
 <body class="font-poppins dark:bg-[#222529] transition-all duration-300 ease-out">
     <!-- Header starts -->
@@ -57,12 +57,58 @@
                                         <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hotel Booking</a></li>
                                     </ul>
                                 </li>
-                                <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Flight</a><i class="fa-solid fa-ellipsis"></i></li>
-                                <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Tour</a><i class="fa-solid fa-ellipsis"></i></li>
-                                <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Cab</a><i class="fa-solid fa-ellipsis"></i></li>
-                                <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Directory</a><i class="fa-solid fa-ellipsis"></i></li>
-                                <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Add Listing</a><i class="fa-solid fa-ellipsis"></i></li>
-                                <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hero</a><i class="fa-solid fa-ellipsis"></i></li>
+                                <li class="group/sub relative flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600">
+                                    <a href="/">Flight</a><i class="fa-solid fa-ellipsis"></i>
+                                    <ul class="absolute left-[96%] top-4 hidden w-60 flex-col rounded-lg bg-white p-2 shadow-xl ring-1 ring-slate-900/5 group-hover/sub:flex dark:bg-[#191B1D]">
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Flight Home</a></li>
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Flight List</a></li>
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Flight Detail</a></li>
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Flight Booking</a></li>
+                                    </ul>
+                                </li>
+                                <li class="group/sub relative flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600">
+                                    <a href="/">Tour</a><i class="fa-solid fa-ellipsis"></i>
+                                    <ul class="absolute left-[96%] top-4 hidden w-60 flex-col rounded-lg bg-white p-2 shadow-xl ring-1 ring-slate-900/5 group-hover/sub:flex dark:bg-[#191B1D]">
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Tour Home</a></li>
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Tour Grid</a></li>
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Tour Detail</a></li>
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Tour Booking</a></li>
+                                    </ul>
+                                </li>
+                                <li class="group/sub relative flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600">
+                                    <a href="/">Cab</a><i class="fa-solid fa-ellipsis"></i>
+                                    <ul class="absolute left-[96%] top-4 hidden w-60 flex-col rounded-lg bg-white p-2 shadow-xl ring-1 ring-slate-900/5 group-hover/sub:flex dark:bg-[#191B1D]">
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Cab Home</a></li>
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Cab List</a></li>
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Cab Detail</a></li>
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Cab Booking</a></li>
+                                    </ul>
+                                </li>
+                                <li class="group/sub relative flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600">
+                                    <a href="/">Directory</a><i class="fa-solid fa-ellipsis"></i>
+                                    <ul class="absolute left-[96%] top-4 hidden w-60 flex-col rounded-lg bg-white p-2 shadow-xl ring-1 ring-slate-900/5 group-hover/sub:flex dark:bg-[#191B1D]">
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Directory Home</a></li>
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Directory Detail</a></li>
+                                    </ul>
+                                </li>
+                                <li class="group/sub relative flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600">
+                                    <a href="/">Add Listing</a><i class="fa-solid fa-ellipsis"></i>
+                                    <ul class="absolute left-[96%] top-4 hidden w-60 flex-col rounded-lg bg-white p-2 shadow-xl ring-1 ring-slate-900/5 group-hover/sub:flex dark:bg-[#191B1D]">
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Join Us</a></li>
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Add Listing</a></li>
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Add Listing Manual</a></li>
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Listed Added</a></li>
+                                    </ul>
+                                </li>
+                                <li class="group/sub relative flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600">
+                                    <a href="/">Hero</a><i class="fa-solid fa-ellipsis"></i>
+                                    <ul class="absolute left-[96%] top-4 hidden w-60 flex-col rounded-lg bg-white p-2 shadow-xl ring-1 ring-slate-900/5 group-hover/sub:flex dark:bg-[#191B1D]">
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hero Inline Form</a></li>
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hero Multiple Search</a></li>
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hero Image Gallery</a></li>
+                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hero Split</a></li>
+                                    </ul>
+                                </li>
                                 <li class="inline-block rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Booking Confirmed</a></li>
                                 <li class="inline-block rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Compare Listing</a></li>
                                 <li class="inline-block rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Offer Detail</a></li>
@@ -651,7 +697,7 @@
         </section>
         <!-- Feature section ends -->
         <!-- Client brands section starts -->
-        <section class="mt-12">
+        <section class="my-12">
             <div class="standard-container px-4">
                 <div class="grid grid-cols-4 md:grid-cols-12">
                     <div class="col-span-2 mx-auto p-2">
@@ -678,36 +724,71 @@
         <!-- Client brands section ends -->
         <!-- Testimonial section starts -->
         <section class="my-12">
-            <div class="standard-container px-4">
-                <div class="mx-auto flex w-full max-w-[450px] flex-col flex-wrap items-center gap-x-20 md:flex-nowrap lg:max-w-[1024px] lg:flex-row">
-                    <div class="relative w-full md:basis-1/2">
-                        <div class="absolute -left-8 top-6 rounded-md bg-orange-500 p-2">
-                            <img src="https://booking.webestica.com/assets/images/element/02.svg" alt="Emoji" class="h-12 w-12" />
-                        </div>
-                        <img src="https://booking.webestica.com/assets/images/team/01.jpg" alt="one" class="h-full w-full shrink-0 rounded-xl object-cover object-center" />
-                        <div class="absolute -right-16 bottom-0 -z-10 hidden md:block">
-                            <svg width="326px" height="335px" viewBox="0 0 326 335">
-                                <path class="opacity-1 fill-slate-300/40" d="M7.3,0C3.3,0,0,3.3,0,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.6,3.3,11.3,0,7.3,0z
+            <div class="group/main standard-container swiper mySwiper px-4">
+                <div class="swiper-wrapper items-center">
+                    <div class="swiper-slide flex w-full flex-col items-center gap-x-14 md:flex-row md:flex-nowrap">
+                        <div class="relative mx-10 w-full md:basis-1/2">
+                            <div class="absolute -left-8 top-6 rounded-md bg-orange-500 p-2">
+                                <img src="https://booking.webestica.com/assets/images/element/02.svg" alt="Emoji" class="h-12 w-12" />
+                            </div>
+                            <img src="https://booking.webestica.com/assets/images/team/01.jpg" alt="one" class="h-full w-full shrink-0 rounded-xl object-cover object-center" />
+                            <div class="absolute -right-16 bottom-0 -z-10 hidden md:block">
+                                <svg width="326px" height="335px" viewBox="0 0 326 335">
+                                    <path class="opacity-1 fill-slate-300/40" d="M7.3,0C3.3,0,0,3.3,0,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.6,3.3,11.3,0,7.3,0z
                                                 M59.2,0.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.5,4,63.2,0.7,59.2,0.7L59.2,0.7z   M111.1,1.5c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.4,4.7,115.1,1.5,111.1,1.5 C111.1,1.5,111.1,1.5,111.1,1.5L111.1,1.5z M163,2.2c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0 C170.3,5.5,167,2.2,163,2.2C163,2.2,163,2.2,163,2.2L163,2.2z M214.9,2.9c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3 c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.2,6.2,218.9,2.9,214.9,2.9C214.9,2.9,214.9,2.9,214.9,2.9L214.9,2.9z M266.8,3.7 c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.1,6.9,270.8,3.7,266.8,3.7C266.8,3.7,266.8,3.7,266.8,3.7L266.8,3.7z M318.7,4.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326,7.7,322.7,4.4,318.7,4.4C318.7,4.4,318.7,4.4,318.7,4.4L318.7,4.4z M7.3,52.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.6,55.9,11.4,52.7,7.3,52.7C7.3,52.7,7.3,52.7,7.3,52.7L7.3,52.7z M59.2,53.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.5,56.7,63.3,53.4,59.2,53.4C59.2,53.4,59.2,53.4,59.2,53.4L59.2,53.4z M111.1,54.1c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.4,57.4,115.2,54.1,111.1,54.1C111.1,54.1,111.1,54.1,111.1,54.1L111.1,54.1z M163,54.9c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C170.3,58.1,167.1,54.9,163,54.9C163,54.9,163,54.9,163,54.9L163,54.9zM214.9,55.6c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.2,58.9,219,55.6,214.9,55.6C214.9,55.6,214.9,55.6,214.9,55.6L214.9,55.6z M266.8,56.3c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.1,59.6,270.9,56.3,266.8,56.3C266.8,56.3,266.8,56.3,266.8,56.3L266.8,56.3z M318.7,57c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326,60.3,322.8,57.1,318.7,57C318.7,57,318.7,57,318.7,57L318.7,57zM7.3,105.3c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.7,108.6,11.4,105.3,7.3,105.3C7.3,105.3,7.3,105.3,7.3,105.3L7.3,105.3z M59.2,106c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.6,109.3,63.3,106.1,59.2,106C59.2,106,59.2,106,59.2,106L59.2,106z M111.1,106.8c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.5,110.1,115.2,106.8,111.1,106.8C111.1,106.8,111.1,106.8,111.1,106.8L111.1,106.8zM163,107.5c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C170.4,110.8,167.1,107.5,163,107.5C163,107.5,163,107.5,163,107.5L163,107.5z M214.9,108.2c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.3,111.5,219,108.3,214.9,108.2C214.9,108.2,214.9,108.3,214.9,108.2L214.9,108.2z M266.8,109c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.2,112.3,270.9,109,266.8,109C266.8,109,266.8,109,266.8,109L266.8,109zM318.7,109.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326.1,113,322.8,109.7,318.7,109.7C318.7,109.7,318.7,109.7,318.7,109.7L318.7,109.7z M7.3,158c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.6,161.3,11.3,158,7.3,158z M59.2,158.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.5,162,63.2,158.7,59.2,158.7C59.2,158.7,59.2,158.7,59.2,158.7L59.2,158.7z M111.1,159.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.4,162.7,115.1,159.5,111.1,159.4C111.1,159.4,111.1,159.4,111.1,159.4L111.1,159.4z M163,160.2c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C170.3,163.5,167,160.2,163,160.2C163,160.2,163,160.2,163,160.2L163,160.2z M214.9,160.9c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.2,164.2,218.9,160.9,214.9,160.9C214.9,160.9,214.9,160.9,214.9,160.9L214.9,160.9zM266.8,161.6c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.1,164.9,270.8,161.6,266.8,161.6C266.8,161.6,266.8,161.6,266.8,161.6L266.8,161.6z M318.7,162.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326,165.6,322.7,162.4,318.7,162.4C318.7,162.4,318.7,162.4,318.7,162.4L318.7,162.4z M7.3,210.6c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.6,213.9,11.4,210.7,7.3,210.6C7.3,210.6,7.3,210.6,7.3,210.6L7.3,210.6zM59.2,211.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.5,214.7,63.3,211.4,59.2,211.4C59.2,211.4,59.2,211.4,59.2,211.4L59.2,211.4z M111.1,212.1c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.4,215.4,115.2,212.1,111.1,212.1C111.1,212.1,111.1,212.1,111.1,212.1L111.1,212.1z M163,212.8c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C170.3,216.1,167.1,212.8,163,212.8C163,212.8,163,212.8,163,212.8L163,212.8z M214.9,213.6c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.2,216.8,219,213.6,214.9,213.6C214.9,213.6,214.9,213.6,214.9,213.6L214.9,213.6z M266.8,214.3c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.1,217.6,270.9,214.3,266.8,214.3C266.8,214.3,266.8,214.3,266.8,214.3L266.8,214.3z M318.7,215c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326,218.3,322.8,215,318.7,215C318.7,215,318.7,215,318.7,215L318.7,215z M7.3,263.3c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.7,266.6,11.4,263.3,7.3,263.3C7.3,263.3,7.3,263.3,7.3,263.3L7.3,263.3z M59.2,264c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.6,267.3,63.3,264,59.2,264C59.2,264,59.2,264,59.2,264L59.2,264z M111.1,264.8c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.5,268,115.2,264.8,111.1,264.8C111.1,264.8,111.1,264.8,111.1,264.8L111.1,264.8z M163,265.5c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C170.4,268.8,167.1,265.5,163,265.5C163,265.5,163,265.5,163,265.5L163,265.5z M214.9,266.2c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.3,269.5,219,266.2,214.9,266.2C214.9,266.2,214.9,266.2,214.9,266.2L214.9,266.2z M266.8,267c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.2,270.2,270.9,267,266.8,267C266.8,267,266.8,267,266.8,267L266.8,267z M318.7,267.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326.1,271,322.8,267.7,318.7,267.7C318.7,267.7,318.7,267.7,318.7,267.7L318.7,267.7z M7.4,316c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.7,319.2,11.4,316,7.4,316C7.3,316,7.3,316,7.4,316L7.4,316z M59.3,316.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.6,320,63.3,316.7,59.3,316.7C59.2,316.7,59.2,316.7,59.3,316.7L59.3,316.7z M111.2,317.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.5,320.7,115.2,317.4,111.2,317.4C111.1,317.4,111.1,317.4,111.2,317.4L111.2,317.4z M163.1,318.2c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C170.4,321.4,167.1,318.2,163.1,318.2C163,318.2,163,318.2,163.1,318.2L163.1,318.2z M215,318.9c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.3,322.2,219,318.9,215,318.9C214.9,318.9,214.9,318.9,215,318.9L215,318.9z M266.9,319.6c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.2,322.9,270.9,319.6,266.9,319.6C266.8,319.6,266.8,319.6,266.9,319.6L266.9,319.6z M318.8,320.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326.1,323.6,322.8,320.4,318.8,320.4C318.7,320.4,318.7,320.4,318.8,320.4L318.8,320.4z"></path>
-                            </svg>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="w-full px-6 md:basis-1/2">
+                            <div class="mb-4 shrink-0">
+                                <i class="fa-solid fa-quote-left fa-fw text-3xl text-indigo-700 lg:text-6xl"></i>
+                            </div>
+                            <p class="text-lg font-medium text-slate-400">Moonlight newspaper up its enjoyment agreeable depending. Timed voice share led him to widen noisy young. At weddings believed in laughing.</p>
+                            <div>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                            </div>
+                            <h4 class="mt-2 font-semibold dark:text-white">Billy Vasquez</h4>
+                            <h5 class="font-medium text-slate-400">Ceo of Apple</h5>
                         </div>
                     </div>
-                    <div class="w-full px-6 md:basis-1/2">
-                        <div class="mb-4 shrink-0">
-                            <i class="fa-solid fa-quote-left fa-fw text-3xl text-indigo-700 lg:text-6xl"></i>
+                    <!-- 2nd testimonial starts -->
+                    <div class="swiper-slide flex w-full flex-col items-center gap-x-14 md:flex-row md:flex-nowrap">
+                        <div class="relative mx-10 w-full md:basis-1/2">
+                            <div class="absolute -left-8 top-6 rounded-md bg-orange-500 p-2">
+                                <img src="https://booking.webestica.com/assets/images/element/03.svg" alt="Emoji" class="h-12 w-12" />
+                            </div>
+                            <img src="https://booking.webestica.com/assets/images/team/02.jpg" alt="one" class="h-full w-full shrink-0 rounded-xl object-cover object-center" />
+                            <div class="absolute -right-16 bottom-0 -z-10 hidden md:block">
+                                <svg width="326px" height="335px" viewBox="0 0 326 335">
+                                    <path class="opacity-1 fill-slate-300/40" d="M7.3,0C3.3,0,0,3.3,0,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.6,3.3,11.3,0,7.3,0z
+                                                M59.2,0.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.5,4,63.2,0.7,59.2,0.7L59.2,0.7z   M111.1,1.5c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.4,4.7,115.1,1.5,111.1,1.5 C111.1,1.5,111.1,1.5,111.1,1.5L111.1,1.5z M163,2.2c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0 C170.3,5.5,167,2.2,163,2.2C163,2.2,163,2.2,163,2.2L163,2.2z M214.9,2.9c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3 c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.2,6.2,218.9,2.9,214.9,2.9C214.9,2.9,214.9,2.9,214.9,2.9L214.9,2.9z M266.8,3.7 c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.1,6.9,270.8,3.7,266.8,3.7C266.8,3.7,266.8,3.7,266.8,3.7L266.8,3.7z M318.7,4.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326,7.7,322.7,4.4,318.7,4.4C318.7,4.4,318.7,4.4,318.7,4.4L318.7,4.4z M7.3,52.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.6,55.9,11.4,52.7,7.3,52.7C7.3,52.7,7.3,52.7,7.3,52.7L7.3,52.7z M59.2,53.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.5,56.7,63.3,53.4,59.2,53.4C59.2,53.4,59.2,53.4,59.2,53.4L59.2,53.4z M111.1,54.1c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.4,57.4,115.2,54.1,111.1,54.1C111.1,54.1,111.1,54.1,111.1,54.1L111.1,54.1z M163,54.9c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C170.3,58.1,167.1,54.9,163,54.9C163,54.9,163,54.9,163,54.9L163,54.9zM214.9,55.6c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.2,58.9,219,55.6,214.9,55.6C214.9,55.6,214.9,55.6,214.9,55.6L214.9,55.6z M266.8,56.3c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.1,59.6,270.9,56.3,266.8,56.3C266.8,56.3,266.8,56.3,266.8,56.3L266.8,56.3z M318.7,57c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326,60.3,322.8,57.1,318.7,57C318.7,57,318.7,57,318.7,57L318.7,57zM7.3,105.3c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.7,108.6,11.4,105.3,7.3,105.3C7.3,105.3,7.3,105.3,7.3,105.3L7.3,105.3z M59.2,106c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.6,109.3,63.3,106.1,59.2,106C59.2,106,59.2,106,59.2,106L59.2,106z M111.1,106.8c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.5,110.1,115.2,106.8,111.1,106.8C111.1,106.8,111.1,106.8,111.1,106.8L111.1,106.8zM163,107.5c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C170.4,110.8,167.1,107.5,163,107.5C163,107.5,163,107.5,163,107.5L163,107.5z M214.9,108.2c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.3,111.5,219,108.3,214.9,108.2C214.9,108.2,214.9,108.3,214.9,108.2L214.9,108.2z M266.8,109c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.2,112.3,270.9,109,266.8,109C266.8,109,266.8,109,266.8,109L266.8,109zM318.7,109.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326.1,113,322.8,109.7,318.7,109.7C318.7,109.7,318.7,109.7,318.7,109.7L318.7,109.7z M7.3,158c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.6,161.3,11.3,158,7.3,158z M59.2,158.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.5,162,63.2,158.7,59.2,158.7C59.2,158.7,59.2,158.7,59.2,158.7L59.2,158.7z M111.1,159.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.4,162.7,115.1,159.5,111.1,159.4C111.1,159.4,111.1,159.4,111.1,159.4L111.1,159.4z M163,160.2c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C170.3,163.5,167,160.2,163,160.2C163,160.2,163,160.2,163,160.2L163,160.2z M214.9,160.9c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.2,164.2,218.9,160.9,214.9,160.9C214.9,160.9,214.9,160.9,214.9,160.9L214.9,160.9zM266.8,161.6c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.1,164.9,270.8,161.6,266.8,161.6C266.8,161.6,266.8,161.6,266.8,161.6L266.8,161.6z M318.7,162.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326,165.6,322.7,162.4,318.7,162.4C318.7,162.4,318.7,162.4,318.7,162.4L318.7,162.4z M7.3,210.6c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.6,213.9,11.4,210.7,7.3,210.6C7.3,210.6,7.3,210.6,7.3,210.6L7.3,210.6zM59.2,211.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.5,214.7,63.3,211.4,59.2,211.4C59.2,211.4,59.2,211.4,59.2,211.4L59.2,211.4z M111.1,212.1c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.4,215.4,115.2,212.1,111.1,212.1C111.1,212.1,111.1,212.1,111.1,212.1L111.1,212.1z M163,212.8c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C170.3,216.1,167.1,212.8,163,212.8C163,212.8,163,212.8,163,212.8L163,212.8z M214.9,213.6c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.2,216.8,219,213.6,214.9,213.6C214.9,213.6,214.9,213.6,214.9,213.6L214.9,213.6z M266.8,214.3c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.1,217.6,270.9,214.3,266.8,214.3C266.8,214.3,266.8,214.3,266.8,214.3L266.8,214.3z M318.7,215c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326,218.3,322.8,215,318.7,215C318.7,215,318.7,215,318.7,215L318.7,215z M7.3,263.3c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.7,266.6,11.4,263.3,7.3,263.3C7.3,263.3,7.3,263.3,7.3,263.3L7.3,263.3z M59.2,264c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.6,267.3,63.3,264,59.2,264C59.2,264,59.2,264,59.2,264L59.2,264z M111.1,264.8c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.5,268,115.2,264.8,111.1,264.8C111.1,264.8,111.1,264.8,111.1,264.8L111.1,264.8z M163,265.5c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C170.4,268.8,167.1,265.5,163,265.5C163,265.5,163,265.5,163,265.5L163,265.5z M214.9,266.2c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.3,269.5,219,266.2,214.9,266.2C214.9,266.2,214.9,266.2,214.9,266.2L214.9,266.2z M266.8,267c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.2,270.2,270.9,267,266.8,267C266.8,267,266.8,267,266.8,267L266.8,267z M318.7,267.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326.1,271,322.8,267.7,318.7,267.7C318.7,267.7,318.7,267.7,318.7,267.7L318.7,267.7z M7.4,316c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C14.7,319.2,11.4,316,7.4,316C7.3,316,7.3,316,7.4,316L7.4,316z M59.3,316.7c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C66.6,320,63.3,316.7,59.3,316.7C59.2,316.7,59.2,316.7,59.3,316.7L59.3,316.7z M111.2,317.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C118.5,320.7,115.2,317.4,111.2,317.4C111.1,317.4,111.1,317.4,111.2,317.4L111.2,317.4z M163.1,318.2c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C170.4,321.4,167.1,318.2,163.1,318.2C163,318.2,163,318.2,163.1,318.2L163.1,318.2z M215,318.9c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C222.3,322.2,219,318.9,215,318.9C214.9,318.9,214.9,318.9,215,318.9L215,318.9z M266.9,319.6c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C274.2,322.9,270.9,319.6,266.9,319.6C266.8,319.6,266.8,319.6,266.9,319.6L266.9,319.6z M318.8,320.4c-4,0-7.3,3.3-7.3,7.3c0,4,3.3,7.3,7.3,7.3c4,0,7.3-3.3,7.3-7.3c0,0,0,0,0,0C326.1,323.6,322.8,320.4,318.8,320.4C318.7,320.4,318.7,320.4,318.8,320.4L318.8,320.4z"></path>
+                                </svg>
+                            </div>
                         </div>
-                        <p class="text-lg text-slate-400">Moonlight newspaper up its enjoyment agreeable depending. Timed voice share led him to widen noisy young. At weddings believed in laughing.</p>
-                        <div>
-                            <i class="fa-solid fa-star text-yellow-400"></i>
-                            <i class="fa-solid fa-star text-yellow-400"></i>
-                            <i class="fa-solid fa-star text-yellow-400"></i>
-                            <i class="fa-solid fa-star text-yellow-400"></i>
-                            <i class="fa-solid fa-star text-yellow-400"></i>
+                        <div class="w-full px-6 md:basis-1/2">
+                            <div class="mb-4 shrink-0">
+                                <i class="fa-solid fa-quote-left fa-fw text-3xl text-indigo-700 lg:text-6xl"></i>
+                            </div>
+                            <p class="text-lg font-medium text-slate-400">Passage its ten led hearted removal cordial. Preference any astonished unreserved Mrs.understood the Preference unreserved.</p>
+                            <div>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                            </div>
+                            <h4 class="mt-2 font-semibold dark:text-white">Carolyn Ortiz</h4>
+                            <h5 class="font-medium text-slate-400">Ceo of Google</h5>
                         </div>
-                        <h4 class="mt-2 font-semibold dark:text-white">Billy Vasquez</h4>
-                        <h5 class="text-slate-400">Ceo of Apple</h5>
                     </div>
+                    <!-- 2nd testimonial ends -->
                 </div>
+                <div class="swiper-button-next transition-all duration-300 ease-out lg:translate-x-10 lg:opacity-0 lg:group-hover/main:translate-x-0 lg:group-hover/main:opacity-100"></div>
+                <div class="swiper-button-prev transition-all duration-300 ease-out lg:-translate-x-10 lg:opacity-0 lg:group-hover/main:translate-x-0 lg:group-hover/main:opacity-100"></div>
             </div>
         </section>
         <!-- Testimonial section ends -->
@@ -956,7 +1037,7 @@
                         <!-- Top links starts -->
                         <div>
                             <h3 class="mb-4 text-xl font-bold">Top Links</h3>
-                            <ul class="[&>li>a]:pr-2 [&>li]:inline-block hover:[&>li>a]:text-indigo-600">
+                            <ul class="[&>li>a]:pr-2 hover:[&>li>a]:text-indigo-600 [&>li]:inline-block">
                                 <li><a href="/" class="text-slate-400">Flights</a></li>
                                 <li><a href="/" class="text-slate-400">Hotels</a></li>
                                 <li><a href="/" class="text-slate-400">Tours</a></li>
@@ -1014,7 +1095,7 @@
                     </div>
                     <!-- copyright section starts -->
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-4 text-slate-400">
-                        <p>Copyrights &copy;<span id="year">2023</span> Booking. Design by Webestica. Built by <a href="https://www.facebook.com/james.christian.3914207" target="_blank" class="font-bold text-cyan-500">Marn Tet Zan</a>.</p>
+                        <p>Copyrights &copy;<span id="year">2023</span> Booking. Designed by <a href="https://www.webestica.com/" target="_blank" class="font-bold text-indigo-600">Webestica</a>. Built by <a href="https://www.facebook.com/james.christian.3914207" target="_blank" class="font-bold text-cyan-500">Marn Tet Zan</a>.</p>
                         <ul class="flex space-x-2 font-semibold [&>li>a]:text-sm hover:[&>li>a]:text-indigo-600">
                             <li><a href="/">Privacy policy</a></li>
                             <li><a href="/">Terms and conditions</a></li>
@@ -1036,6 +1117,28 @@
     </main>
     <!-- Main ends -->
     <script type="module" src="/main.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 50,
+        centeredSlides: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+    </script>
 </body>
 
 </html>
