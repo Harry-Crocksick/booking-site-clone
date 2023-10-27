@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="https://booking.webestica.com/assets/images/favicon.ico" />
+    <meta name="author" content="Marn Tet Zan" />
+    <meta name="keywords" content="Marn Tet Zan, Online booking, Booking site, Booking Website, Travelling" />
     <meta name="title" content="Booking - Multipurpose Online Booking Theme" />
     <meta name="description" content="Booking - Multipurpose Online Booking Theme" />
     <meta property="og:type" content="website" />
@@ -43,75 +45,25 @@
                         <li class="group relative inline-block px-3 py-1 text-sm">
                             <a href="/">Listings <i class="fa-solid fa-chevron-down fa-xs"></i></a>
                             <!-- Dropdown Navigation -->
-                            <ul class="absolute top-full z-10 hidden w-60 flex-col rounded-lg bg-white p-2 shadow-xl ring-1 ring-slate-900/5 group-hover:flex dark:bg-[#191B1D] [&>li]:w-full">
+                            <ul class="absolute top-full z-10 hidden w-60 flex-col rounded-lg bg-white p-2 shadow-xl ring-1 ring-slate-900/5 group-hover:flex dark:bg-[#191B1D] [&>li]:w-full" id="mainDropdownContainer">
                                 <li class="group/sub flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600">
                                     <a href="/">Hotel</a><span><i class="fa-solid fa-ellipsis"></i></span>
                                     <!-- Sub-Dropdown Navigation -->
-                                    <ul class="absolute left-[96%] top-4 hidden w-60 flex-col rounded-lg bg-white p-2 shadow-xl ring-1 ring-slate-900/5 group-hover/sub:flex dark:bg-[#191B1D]">
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hotel Home</a></li>
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hotel Chain</a></li>
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hotel Resort</a></li>
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hotel Grid</a></li>
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hotel List</a></li>
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hotel Detail</a></li>
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hotel Booking</a></li>
+                                    <ul class="absolute left-[96%] top-4 hidden w-60 flex-col rounded-lg bg-white p-2 shadow-xl ring-1 ring-slate-900/5 group-hover/sub:flex dark:bg-[#191B1D]" id="dropdownContainer">
+                                        <!-- here i use <template> check src/interfaces/subdropdown.js -->
+                                        <template id="dropdown">
+                                            <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600">
+                                                <a href="/" class="dropdownLink"></a>
+                                            </li>
+                                        </template>
                                     </ul>
                                 </li>
-                                <li class="group/sub relative flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600">
-                                    <a href="/">Flight</a><i class="fa-solid fa-ellipsis"></i>
-                                    <ul class="absolute left-[96%] top-4 hidden w-60 flex-col rounded-lg bg-white p-2 shadow-xl ring-1 ring-slate-900/5 group-hover/sub:flex dark:bg-[#191B1D]">
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Flight Home</a></li>
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Flight List</a></li>
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Flight Detail</a></li>
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Flight Booking</a></li>
-                                    </ul>
-                                </li>
-                                <li class="group/sub relative flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600">
-                                    <a href="/">Tour</a><i class="fa-solid fa-ellipsis"></i>
-                                    <ul class="absolute left-[96%] top-4 hidden w-60 flex-col rounded-lg bg-white p-2 shadow-xl ring-1 ring-slate-900/5 group-hover/sub:flex dark:bg-[#191B1D]">
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Tour Home</a></li>
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Tour Grid</a></li>
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Tour Detail</a></li>
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Tour Booking</a></li>
-                                    </ul>
-                                </li>
-                                <li class="group/sub relative flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600">
-                                    <a href="/">Cab</a><i class="fa-solid fa-ellipsis"></i>
-                                    <ul class="absolute left-[96%] top-4 hidden w-60 flex-col rounded-lg bg-white p-2 shadow-xl ring-1 ring-slate-900/5 group-hover/sub:flex dark:bg-[#191B1D]">
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Cab Home</a></li>
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Cab List</a></li>
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Cab Detail</a></li>
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Cab Booking</a></li>
-                                    </ul>
-                                </li>
-                                <li class="group/sub relative flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600">
-                                    <a href="/">Directory</a><i class="fa-solid fa-ellipsis"></i>
-                                    <ul class="absolute left-[96%] top-4 hidden w-60 flex-col rounded-lg bg-white p-2 shadow-xl ring-1 ring-slate-900/5 group-hover/sub:flex dark:bg-[#191B1D]">
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Directory Home</a></li>
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Directory Detail</a></li>
-                                    </ul>
-                                </li>
-                                <li class="group/sub relative flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600">
-                                    <a href="/">Add Listing</a><i class="fa-solid fa-ellipsis"></i>
-                                    <ul class="absolute left-[96%] top-4 hidden w-60 flex-col rounded-lg bg-white p-2 shadow-xl ring-1 ring-slate-900/5 group-hover/sub:flex dark:bg-[#191B1D]">
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Join Us</a></li>
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Add Listing</a></li>
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Add Listing Manual</a></li>
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Listed Added</a></li>
-                                    </ul>
-                                </li>
-                                <li class="group/sub relative flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600">
-                                    <a href="/">Hero</a><i class="fa-solid fa-ellipsis"></i>
-                                    <ul class="absolute left-[96%] top-4 hidden w-60 flex-col rounded-lg bg-white p-2 shadow-xl ring-1 ring-slate-900/5 group-hover/sub:flex dark:bg-[#191B1D]">
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hero Inline Form</a></li>
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hero Multiple Search</a></li>
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hero Image Gallery</a></li>
-                                        <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Hero Split</a></li>
-                                    </ul>
-                                </li>
-                                <li class="inline-block rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Booking Confirmed</a></li>
-                                <li class="inline-block rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Compare Listing</a></li>
-                                <li class="inline-block rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600"><a href="/">Offer Detail</a></li>
+                                <!-- check src/interfaces/dropdown.js -->
+                                <template id="mainDropdown">
+                                    <li class="flex items-center justify-between rounded-md px-2 py-3 text-slate-400 hover:bg-slate-400/10 hover:text-indigo-600">
+                                        <a href="/"></a><i class="fa-solid fa-ellipsis"></i>
+                                    </li>
+                                </template>
                             </ul>
                         </li>
                         <li class="inline-block px-3 py-1 text-sm">
@@ -639,59 +591,23 @@
                     <!-- Check that out in style.css -->
                     <h1 class="heading-1">Featured Hotels</h1>
                 </div>
-                <div class="flex flex-wrap justify-center gap-3 lg:gap-6 xl:flex-nowrap">
-                    <figure class="group basis-full md:basis-1/3 xl:basis-1/4">
-                        <div class="relative shrink-0 overflow-hidden rounded-xl">
-                            <img src="https://booking.webestica.com/assets/images/category/hotel/01.jpg" alt="one" class="h-full w-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105" loading="lazy" />
-                            <div class="absolute bottom-4 left-4 rounded-full bg-black px-4 py-1 text-white"><i class="fa-solid fa-location-dot"></i> New York</div>
-                        </div>
-                        <figcaption class="px-2 py-4">
-                            <h3 class="mb-2 text-xl font-semibold text-black transition-colors duration-500 ease-out group-hover:text-indigo-700 dark:text-white">Baga Comfort</h3>
-                            <div class="price-tag flex items-center justify-between">
-                                <p class="text-emerald-500"><span class="font-semibold">$455</span> /starting at</p>
-                                <p class="font-semibold dark:text-white">4.5 <i class="fa-solid fa-star text-yellow-400"></i></p>
+                <div class="flex flex-wrap justify-center gap-3 lg:gap-6 xl:flex-nowrap" id="hotelsContainer">
+                    <!-- here i use <template> check src/interfaces/hotels.js -->
+                    <template id="hotels">
+                        <figure class="group basis-full md:basis-1/3 xl:basis-1/4">
+                            <div class="relative shrink-0 overflow-hidden rounded-xl">
+                                <img src="https://booking.webestica.com/assets/images/category/hotel/01.jpg" alt="one" class="h-full w-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105" loading="lazy" />
+                                <div class="absolute bottom-4 left-4 rounded-full bg-black px-4 py-1 text-white"><i class="fa-solid fa-location-dot"></i> <span class="hotelLocation"></span></div>
                             </div>
-                        </figcaption>
-                    </figure>
-                    <figure class="group basis-full md:basis-1/3 xl:basis-1/4">
-                        <div class="relative shrink-0 overflow-hidden rounded-xl">
-                            <img src="https://booking.webestica.com/assets/images/category/hotel/02.jpg" alt="two" class="h-full w-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105" loading="lazy" />
-                            <div class="absolute bottom-4 left-4 rounded-full bg-black px-4 py-1 text-white"><i class="fa-solid fa-location-dot"></i> California</div>
-                        </div>
-                        <figcaption class="px-2 py-4">
-                            <h3 class="mb-2 text-xl font-semibold text-black transition-colors duration-500 ease-out group-hover:text-indigo-700 dark:text-white">New Apollo Hotel</h3>
-                            <div class="price-tag flex items-center justify-between">
-                                <p class="text-emerald-500"><span class="font-semibold">$585</span> /starting at</p>
-                                <p class="font-semibold dark:text-white">4.8 <i class="fa-solid fa-star text-yellow-400"></i></p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <figure class="group basis-full md:basis-1/3 xl:basis-1/4">
-                        <div class="relative shrink-0 overflow-hidden rounded-xl">
-                            <img src="https://booking.webestica.com/assets/images/category/hotel/03.jpg" alt="three" class="h-full w-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105" loading="lazy" />
-                            <div class="absolute bottom-4 left-4 rounded-full bg-black px-4 py-1 text-white"><i class="fa-solid fa-location-dot"></i> Los Angeles</div>
-                        </div>
-                        <figcaption class="px-2 py-4">
-                            <h3 class="mb-2 text-xl font-semibold text-black transition-colors duration-500 ease-out group-hover:text-indigo-700 dark:text-white">New Age Hotel</h3>
-                            <div class="price-tag flex items-center justify-between">
-                                <p class="text-emerald-500"><span class="font-semibold">$385</span> /starting at</p>
-                                <p class="font-semibold dark:text-white">4.6 <i class="fa-solid fa-star text-yellow-400"></i></p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <figure class="group basis-full md:basis-1/3 xl:basis-1/4">
-                        <div class="relative shrink-0 overflow-hidden rounded-xl">
-                            <img src="https://booking.webestica.com/assets/images/category/hotel/04.jpg" alt="four" class="h-full w-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105" loading="lazy" />
-                            <div class="absolute bottom-4 left-4 rounded-full bg-black px-4 py-1 text-white"><i class="fa-solid fa-location-dot"></i> Chicago</div>
-                        </div>
-                        <figcaption class="px-2 py-4">
-                            <h3 class="mb-2 text-xl font-semibold text-black transition-colors duration-500 ease-out group-hover:text-indigo-700 dark:text-white">Helios Beach Resort</h3>
-                            <div class="price-tag flex items-center justify-between">
-                                <p class="text-emerald-500"><span class="font-semibold">$665</span> /starting at</p>
-                                <p class="font-semibold dark:text-white">4.8 <i class="fa-solid fa-star text-yellow-400"></i></p>
-                            </div>
-                        </figcaption>
-                    </figure>
+                            <figcaption class="px-2 py-4">
+                                <h3 class="mb-2 text-xl font-semibold text-black transition-colors duration-500 ease-out group-hover:text-indigo-700 dark:text-white description"></h3>
+                                <div class="price-tag flex items-center justify-between">
+                                    <p class="text-emerald-500"><span class="font-semibold price"></span> /starting at</p>
+                                    <p class="font-semibold dark:text-white"> <span class="rating"></span> <i class="fa-solid fa-star text-yellow-400"></i></p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </template>
                 </div>
             </div>
         </section>
@@ -699,25 +615,13 @@
         <!-- Client brands section starts -->
         <section class="mt-16">
             <div class="standard-container px-4">
-                <div class="grid grid-cols-4 md:grid-cols-12">
-                    <div class="col-span-2 mx-auto p-2">
-                        <img src="https://booking.webestica.com/assets/images/client/01.svg" alt="one" class="h-auto w-48 object-contain object-center grayscale transition duration-300 hover:grayscale-0 md:h-16 md:w-full" loading="lazy" />
-                    </div>
-                    <div class="col-span-2 mx-auto p-2">
-                        <img src="https://booking.webestica.com/assets/images/client/02.svg" alt="two" class="h-auto w-48 object-contain object-center grayscale transition duration-300 hover:grayscale-0 md:h-16 md:w-full" loading="lazy" />
-                    </div>
-                    <div class="col-span-2 mx-auto p-2">
-                        <img src="https://booking.webestica.com/assets/images/client/03.svg" alt="three" class="h-auto w-48 object-contain object-center grayscale transition duration-300 hover:grayscale-0 md:h-16 md:w-full" loading="lazy" />
-                    </div>
-                    <div class="col-span-2 mx-auto p-2">
-                        <img src="https://booking.webestica.com/assets/images/client/04.svg" alt="four" class="h-auto w-48 object-contain object-center grayscale transition duration-300 hover:grayscale-0 md:h-16 md:w-full" loading="lazy" />
-                    </div>
-                    <div class="col-span-2 mx-auto p-2">
-                        <img src="https://booking.webestica.com/assets/images/client/05.svg" alt="five" class="h-auto w-48 object-contain object-center grayscale transition duration-300 hover:grayscale-0 md:h-16 md:w-full" loading="lazy" />
-                    </div>
-                    <div class="col-span-2 mx-auto p-2">
-                        <img src="https://booking.webestica.com/assets/images/client/06.svg" alt="six" class="h-auto w-48 object-contain object-center grayscale transition duration-300 hover:grayscale-0 md:h-16 md:w-full" loading="lazy" />
-                    </div>
+                <div class="grid grid-cols-4 md:grid-cols-12" id="clientsListContainer">
+                    <!-- here i use <template> check src/interfaces/clientBrands.js -->
+                    <template id="clientsList">
+                        <div class="col-span-2 mx-auto p-2">
+                            <img src="/" alt="" class="h-auto w-48 object-contain object-center grayscale transition duration-300 hover:grayscale-0 md:h-16 md:w-full" loading="lazy" />
+                        </div>
+                    </template>
                 </div>
             </div>
         </section>
@@ -798,127 +702,20 @@
                 <!-- Here i used custom component class called "heading-1" -->
                 <!-- Check that out in style.css -->
                 <h1 class="heading-1 mb-6">Explore Nearby</h1>
-                <div class="flex flex-wrap items-center justify-center">
+                <div class="flex flex-wrap items-center justify-center" id="citiesContainer">
                     <!-- 1st -->
-                    <div class="group flex w-1/2 flex-col space-y-3 p-6 text-center sm:w-1/3 xl:w-1/6">
-                        <div class="shrink-0">
-                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/01.jpg" alt="one" class="h-auto w-full rounded-full object-contain object-center" loading="lazy" />
+                    <!-- here i use <template> check src/interfaces/explore.js -->
+                    <template id="citiesList">
+                        <div class="group flex w-1/2 flex-col space-y-3 p-6 text-center sm:w-1/3 xl:w-1/6 cityList">
+                            <div class="shrink-0">
+                                <img src="" alt="" class="h-auto w-full rounded-full object-contain object-center image" loading="lazy" />
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold duration-300 ease-out group-hover:text-indigo-600 dark:text-white cityName"></h4>
+                                <p class="text-slate-400 distance"></p>
+                            </div>
                         </div>
-                        <div>
-                            <h4 class="text-xl font-bold duration-300 ease-out group-hover:text-indigo-600 dark:text-white">San Francisco</h4>
-                            <p class="text-slate-400">13 min drive</p>
-                        </div>
-                    </div>
-                    <!-- 2nd -->
-                    <div class="group flex w-1/2 flex-col space-y-3 p-6 text-center sm:w-1/3 xl:w-1/6">
-                        <div class="shrink-0">
-                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/02.jpg" alt="one" class="h-auto w-full rounded-full object-contain object-center" loading="lazy" />
-                        </div>
-                        <div>
-                            <h4 class="text-xl font-bold duration-300 ease-out group-hover:text-indigo-600 dark:text-white">Los Angeles</h4>
-                            <p class="text-slate-400">25 min drive</p>
-                        </div>
-                    </div>
-                    <!-- 3rd -->
-                    <div class="group flex w-1/2 flex-col space-y-3 p-6 text-center sm:w-1/3 xl:w-1/6">
-                        <div class="shrink-0">
-                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/03.jpg" alt="one" class="h-auto w-full rounded-full object-contain object-center" loading="lazy" />
-                        </div>
-                        <div>
-                            <h4 class="text-xl font-bold duration-300 ease-out group-hover:text-indigo-600 dark:text-white">Miami</h4>
-                            <p class="text-slate-400">45 min drive</p>
-                        </div>
-                    </div>
-                    <!-- 4th -->
-                    <div class="group flex w-1/2 flex-col space-y-3 p-6 text-center sm:w-1/3 xl:w-1/6">
-                        <div class="shrink-0">
-                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/04.jpg" alt="one" class="h-auto w-full rounded-full object-contain object-center" loading="lazy" />
-                        </div>
-                        <div>
-                            <h4 class="text-xl font-bold duration-300 ease-out group-hover:text-indigo-600 dark:text-white">Sanjosh</h4>
-                            <p class="text-slate-400">55 min drive</p>
-                        </div>
-                    </div>
-                    <!-- 5th -->
-                    <div class="group flex w-1/2 flex-col space-y-3 p-6 text-center sm:w-1/3 xl:w-1/6">
-                        <div class="shrink-0">
-                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/05.jpg" alt="one" class="h-auto w-full rounded-full object-contain object-center" loading="lazy" />
-                        </div>
-                        <div>
-                            <h4 class="text-xl font-bold duration-300 ease-out group-hover:text-indigo-600 dark:text-white">New York</h4>
-                            <p class="text-slate-400">1-hour drive</p>
-                        </div>
-                    </div>
-                    <!-- 6th -->
-                    <div class="group flex w-1/2 flex-col space-y-3 p-6 text-center sm:w-1/3 xl:w-1/6">
-                        <div class="shrink-0">
-                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/06.jpg" alt="one" class="h-auto w-full rounded-full object-contain object-center" loading="lazy" />
-                        </div>
-                        <div>
-                            <h4 class="text-xl font-bold duration-300 ease-out group-hover:text-indigo-600 dark:text-white">North Justen</h4>
-                            <p class="text-slate-400">2-hour drive</p>
-                        </div>
-                    </div>
-                    <!-- 7th -->
-                    <div class="group flex w-1/2 flex-col space-y-3 p-6 text-center sm:w-1/3 xl:w-1/6">
-                        <div class="shrink-0">
-                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/07.jpg" alt="one" class="h-auto w-full rounded-full object-contain object-center" loading="lazy" />
-                        </div>
-                        <div>
-                            <h4 class="text-xl font-bold duration-300 ease-out group-hover:text-indigo-600 dark:text-white">Rio</h4>
-                            <p class="text-slate-400">20 min drive</p>
-                        </div>
-                    </div>
-                    <!-- 8th -->
-                    <div class="group flex w-1/2 flex-col space-y-3 p-6 text-center sm:w-1/3 xl:w-1/6">
-                        <div class="shrink-0">
-                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/08.jpg" alt="one" class="h-auto w-full rounded-full object-contain object-center" loading="lazy" />
-                        </div>
-                        <div>
-                            <h4 class="text-xl font-bold duration-300 ease-out group-hover:text-indigo-600 dark:text-white">Las Vegas</h4>
-                            <p class="text-slate-400">3-hour drive</p>
-                        </div>
-                    </div>
-                    <!-- 9th -->
-                    <div class="group flex w-1/2 flex-col space-y-3 p-6 text-center sm:w-1/3 xl:w-1/6">
-                        <div class="shrink-0">
-                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/09.jpg" alt="one" class="h-auto w-full rounded-full object-contain object-center" loading="lazy" />
-                        </div>
-                        <div>
-                            <h4 class="text-xl font-bold duration-300 ease-out group-hover:text-indigo-600 dark:text-white">Texas</h4>
-                            <p class="text-slate-400">55 min drive</p>
-                        </div>
-                    </div>
-                    <!-- 10th -->
-                    <div class="group flex w-1/2 flex-col space-y-3 p-6 text-center sm:w-1/3 xl:w-1/6">
-                        <div class="shrink-0">
-                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/10.jpg" alt="one" class="h-auto w-full rounded-full object-contain object-center" loading="lazy" />
-                        </div>
-                        <div>
-                            <h4 class="text-xl font-bold duration-300 ease-out group-hover:text-indigo-600 dark:text-white">Chicago</h4>
-                            <p class="text-slate-400">13 min drive</p>
-                        </div>
-                    </div>
-                    <!-- 11th -->
-                    <div class="group flex w-1/2 flex-col space-y-3 p-6 text-center sm:w-1/3 xl:w-1/6">
-                        <div class="shrink-0">
-                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/11.jpg" alt="one" class="h-auto w-full rounded-full object-contain object-center" loading="lazy" />
-                        </div>
-                        <div>
-                            <h4 class="text-xl font-bold duration-300 ease-out group-hover:text-indigo-600 dark:text-white">New Keagon</h4>
-                            <p class="text-slate-400">35 min drive</p>
-                        </div>
-                    </div>
-                    <!-- 12th -->
-                    <div class="group flex w-1/2 flex-col space-y-3 p-6 text-center sm:w-1/3 xl:w-1/6">
-                        <div class="shrink-0">
-                            <img src="https://booking.webestica.com/assets/images/category/hotel/nearby/12.jpg" alt="one" class="h-auto w-full rounded-full object-contain object-center" loading="lazy" />
-                        </div>
-                        <div>
-                            <h4 class="text-xl font-bold duration-300 ease-out group-hover:text-indigo-600 dark:text-white">Oslo</h4>
-                            <p class="text-slate-400">1 hour 13 min drive</p>
-                        </div>
-                    </div>
+                    </template>
                 </div>
             </div>
         </section>
@@ -1037,28 +834,11 @@
                         <!-- Top links starts -->
                         <div>
                             <h3 class="mb-4 text-xl font-bold">Top Links</h3>
-                            <ul class="[&>li>a]:pr-2 hover:[&>li>a]:text-indigo-600 [&>li]:inline-block">
-                                <li><a href="/" class="text-slate-400">Flights</a></li>
-                                <li><a href="/" class="text-slate-400">Hotels</a></li>
-                                <li><a href="/" class="text-slate-400">Tours</a></li>
-                                <li><a href="/" class="text-slate-400">Cabs</a></li>
-                                <li><a href="/" class="text-slate-400">About</a></li>
-                                <li><a href="/" class="text-slate-400">Contact us</a></li>
-                                <li><a href="/" class="text-slate-400">Blogs</a></li>
-                                <li><a href="/" class="text-slate-400">Services</a></li>
-                                <li><a href="/" class="text-slate-400">Detail page</a></li>
-                                <li><a href="/" class="text-slate-400">Services</a></li>
-                                <li><a href="/" class="text-slate-400">Policy</a></li>
-                                <li><a href="/" class="text-slate-400">Testimonials</a></li>
-                                <li><a href="/" class="text-slate-400">Newsletters</a></li>
-                                <li><a href="/" class="text-slate-400">Podcasts</a></li>
-                                <li><a href="/" class="text-slate-400">Protests</a></li>
-                                <li><a href="/" class="text-slate-400">NewsCyber</a></li>
-                                <li><a href="/" class="text-slate-400">Education</a></li>
-                                <li><a href="/" class="text-slate-400">Sports</a></li>
-                                <li><a href="/" class="text-slate-400">Tech and Auto</a></li>
-                                <li><a href="/" class="text-slate-400">Opinion</a></li>
-                                <li><a href="/" class="text-slate-400">Share Market</a></li>
+                            <ul class="[&>li>a]:pr-2 hover:[&>li>a]:text-indigo-600 [&>li]:inline-block" id="topLinksContainer">
+                                <!-- here i use <template> check src/interfaces/topLinks.js -->
+                                <template id="topLinks">
+                                    <li><a href="/" class="text-slate-400"></a></li>
+                                </template>
                             </ul>
                         </div>
                         <!-- Top links ends -->
